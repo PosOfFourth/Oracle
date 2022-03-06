@@ -162,8 +162,12 @@ DROP TABLE SKU
 ---------------------------------------------------------------------------------------------
 CREATE TABLE ICE ( --아이스크림전체
  SKU_TYPE VARCHAR2(20) PRIMARY KEY,-- 아이스크림 종류
- ICE_ID VARCHAR2(20) NOT NULL --아이스크림 이름
+ ICE_ID VARCHAR2(50) NOT NULL --아이스크림 이름
 ); 
+
+SELECT * FROM ICE
+DROP TABLE ICE
+
 
 INSERT INTO ICE VALUES ('콘' , '구구콘 마다가스카르바닐라맛');
 INSERT INTO ICE VALUES ('콘' , '구구콘 오리지널맛');
@@ -191,11 +195,35 @@ INSERT INTO ICE VALUES ('콘' , '부라보콘 피스타치오맛');
 INSERT INTO ICE VALUES ('콘' , '부라보콘 초코청크맛');
 INSERT INTO ICE VALUES ('콘' , '부라보콘 바닐라맛');
 
-INSERT INTO ICE VALUES ('쭈쭈바' , '');
-INSERT INTO ICE VALUES ('쭈쭈바' , '');
-INSERT INTO ICE VALUES ('쭈쭈바' , '');
-INSERT INTO ICE VALUES ('쭈쭈바' , '');
-INSERT INTO ICE VALUES ('쭈쭈바' , '');
+INSERT INTO ICE VALUES ('쭈쭈바' , '빠삐코 소다맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '빠삐코 밀크맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '빠삐코 달고나맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '빠삐코 초코맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '빠삐코 딸기맛');
+
+INSERT INTO ICE VALUES ('쭈쭈바' , '주물러 소다맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '주물러 수박맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '주물러 복숭아맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '주물러 청포도맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '주물러 콜라맛');
+
+INSERT INTO ICE VALUES ('쭈쭈바' , '뽕따 소다맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '뽕따 레드피치맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '뽕따 초코맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '뽕따 수박맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '뽕따 포도맛');
+
+INSERT INTO ICE VALUES ('쭈쭈바' , '젤루조아 제주감귤맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '젤루조아 백도맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '젤루조아 청포도맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '젤루조아 초코맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '젤루조아 딸기맛');
+
+INSERT INTO ICE VALUES ('쭈쭈바' , '초키초키 초코맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '초키초키 딸기맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '초키초키 바닐라맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '초키초키 샤인머스켓맛');
+INSERT INTO ICE VALUES ('쭈쭈바' , '초키초키 소다맛');
 
 INSERT INTO ICE VALUES ('막대' , '스크류바 딸기맛');
 INSERT INTO ICE VALUES ('막대' , '스크류바 복숭아맛');
@@ -224,16 +252,27 @@ INSERT INTO ICE VALUES ('막대' , '보석바 치즈크림맛');
 INSERT INTO ICE VALUES ('막대' , '보석바 밤맛');
 INSERT INTO ICE VALUES ('막대' , '보석바 코코넛맛');
 
+INSERT INTO ICE VALUES ('컵' , '투게더 바닐라맛');
+INSERT INTO ICE VALUES ('컵' , '투게더 쿠앤크맛');
+INSERT INTO ICE VALUES ('컵' , '투게더 녹차맛');
+INSERT INTO ICE VALUES ('컵' , '투게더 초코맛');
+INSERT INTO ICE VALUES ('컵' , '투게더 딸기맛');
 
-INSERT INTO ICE VALUES ('컵' , '');
-INSERT INTO ICE VALUES ('컵' , '');
-INSERT INTO ICE VALUES ('컵' , '');
-INSERT INTO ICE VALUES ('컵' , '');
-INSERT INTO ICE VALUES ('컵' , '');
+INSERT INTO ICE VALUES ('컵' , '나뚜루 바닐라맛');
+INSERT INTO ICE VALUES ('컵' , '나뚜루 녹차맛');
+INSERT INTO ICE VALUES ('컵' , '나뚜루 초코맛');
+INSERT INTO ICE VALUES ('컵' , '나뚜루 딸기맛');
+INSERT INTO ICE VALUES ('컵' , '나뚜루 피스타치오맛');
 
+INSERT INTO ICE VALUES ('컵' , '하겐다즈 바닐라');
+INSERT INTO ICE VALUES ('컵' , '하겐다즈 초콜릿 & 아몬드');
+INSERT INTO ICE VALUES ('컵' , '하겐다즈 브라우니 마키아또');
+INSERT INTO ICE VALUES ('컵' , '하겐다즈 스트로베리 치즈케이크');
+INSERT INTO ICE VALUES ('컵' , '하겐다즈 키위 & 망고');
 
-SELECT * FROM ICE 
-DROP TABLE ICE 
+INSERT INTO ICE VALUES ('컵' , '호두마루');
+INSERT INTO ICE VALUES ('컵' , '체리마루');
+INSERT INTO ICE VALUES ('컵' , '녹차마루');
 
 COMMIT;
 
